@@ -1,0 +1,640 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+   >
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="34dp">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".HomeFragment">
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/materialCardView5"
+                android:layout_width="0dp"
+                android:layout_height="275dp"
+                app:cardBackgroundColor="@color/bgcolor"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shapeAppearanceOverlay="@style/SpecificCornerCutRounded">
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageview"
+                        android:layout_width="24dp"
+                        android:layout_height="31dp"
+                        android:layout_marginEnd="76dp"
+                        android:src="@drawable/notification"
+                        app:flow_horizontalBias="0.6"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                    </ImageView>
+
+                    <ImageView
+                        android:id="@+id/imgview2"
+                        android:layout_width="24dp"
+                        android:layout_height="31dp"
+                        android:layout_marginStart="36dp"
+                        android:layout_marginEnd="15dp"
+                        android:src="@drawable/moreoptons"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/imageview"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/txtfeb"
+                        android:layout_width="86dp"
+                        android:layout_height="24dp"
+                        android:layout_marginStart="37dp"
+                        android:fontFamily="@font/noto_sans"
+                        android:lineHeight="20px"
+                        android:text="February"
+                        android:textColor="@color/white"
+                        android:textSize="20dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/txtchf"
+                        android:layout_width="35dp"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="20dp"
+                        android:text="CHF"
+                        android:textColor="@color/white"
+                        android:textSize="18dp"
+                        app:layout_constraintEnd_toEndOf="@+id/txtfeb"
+                        app:layout_constraintHorizontal_bias="0.019"
+                        app:layout_constraintStart_toStartOf="@+id/txtfeb"
+                        app:layout_constraintTop_toBottomOf="@id/txtfeb">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/txtnum"
+                        android:layout_width="80dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="12dp"
+                        android:lineHeight="20sp"
+                        android:text="1'685.80"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="@+id/txtchf"
+                        app:layout_constraintTop_toBottomOf="@+id/txtchf" />
+
+                    <TextView
+                        android:id="@+id/txt_total"
+                        android:layout_width="155dp"
+                        android:layout_height="76dp"
+                        android:layout_marginStart="68dp"
+                        android:layout_marginTop="76dp"
+                        android:text="Total   Revenue"
+                        android:textColor="@color/white"
+                        android:textSize="25dp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toEndOf="@id/txtnum"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/materialCardView"
+                android:layout_width="134dp"
+                android:layout_height="115dp"
+                android:layout_marginStart="60dp"
+                app:cardBackgroundColor="@color/cardcolor1"
+                app:cardCornerRadius="15dp"
+                app:layout_constraintBottom_toBottomOf="@+id/materialCardView5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/materialCardView5">
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="113dp">
+
+                    <TextView
+                        android:id="@+id/txtno"
+                        android:layout_width="43dp"
+                        android:layout_height="42dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/noto_sans"
+                        android:text="12"
+                        android:textColor="@color/white"
+                        android:textSize="30dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:layout_width="68dp"
+                        android:layout_height="20dp"
+                        android:fontFamily="@font/noto_sans"
+                        android:lineHeight="38dp"
+                        android:text="Bookings"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/txtno" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/materialCardView6"
+                android:layout_width="134dp"
+                android:layout_height="115dp"
+                android:layout_marginEnd="60dp"
+                app:cardBackgroundColor="@color/colorcard2"
+                app:cardCornerRadius="15dp"
+                app:layout_constraintBottom_toBottomOf="@+id/materialCardView5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/materialCardView5"
+                tools:ignore="MissingConstraints">
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="113dp"
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:id="@+id/txtno1"
+                        android:layout_width="43dp"
+                        android:layout_height="42dp"
+                        android:layout_marginStart="44dp"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/noto_sans"
+                        android:text="26"
+                        android:textColor="@color/white"
+                        android:textSize="30dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:layout_width="68dp"
+                        android:layout_height="20dp"
+                        android:fontFamily="@font/noto_sans"
+                        android:lineHeight="38dp"
+                        android:text="Services"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/txtno1" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/materialview"
+                android:layout_width="360dp"
+                android:layout_height="104dp"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/materialCardView">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="58dp"
+                        android:layout_height="61dp"
+                        android:fontFamily="@font/noto_sans"
+                        android:text="14"
+                        android:textColor="@color/cardview3"
+                        android:textSize="50dp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/textView4"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="119dp"
+                        android:layout_height="46dp"
+                        android:lineHeight="23dp"
+                        android:text="Upcoming   Appointments"
+                        android:textColor="@color/textcolor"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="MissingConstraints"
+                        tools:layout_editor_absoluteX="101dp" />
+
+                    <ImageView
+                        android:id="@+id/txtappointment"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:src="@drawable/calendar"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/textView4"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="156dp"
+                android:layout_height="18dp"
+                android:layout_marginTop="20dp"
+                android:text="Today's Appointments"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/materialview"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="38dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/materialview"
+                tools:ignore="NotSibling"
+                tools:listitem="@layout/appointmentcardview" />
+
+
+            <TextView
+                android:id="@+id/txtview"
+                android:layout_width="156dp"
+                android:layout_height="18dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="212dp"
+                android:text="Recent Bookings"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/recycler" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/materialCardView4"
+                android:layout_width="330dp"
+                android:layout_height="164dp"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+
+                app:layout_constraintTop_toBottomOf="@id/txtview"
+                app:layout_editor_absoluteX="65dp"
+                app:layout_editor_absoluteY="950dp"
+                tools:ignore="MissingConstraints">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <TextView
+                        android:layout_width="168dp"
+                        android:layout_height="19dp"
+                        android:fontFamily="@font/noto_sans"
+                        android:lineHeight="25dp"
+                        android:text="Wash, Hair cut &amp; Styling"
+                        android:textColor="@color/textcolor1"
+                        android:textSize="14dp"
+                        android:textStyle="bold"
+                        tools:layout_editor_absoluteX="72dp"
+                        tools:layout_editor_absoluteY="20dp" />
+
+                    <ImageView
+                        android:layout_width="11dp"
+                        android:layout_height="16dp"
+                        android:src="@drawable/location"
+                        tools:layout_editor_absoluteX="72dp"
+                        tools:layout_editor_absoluteY="45dp" />
+
+                    <TextView
+                        android:layout_width="75dp"
+                        android:layout_height="16dp"
+                        android:text="8002 Zurich"
+                        android:textColor="@color/textadd"
+                        android:textSize="14dp"
+                        app:layout_editor_absoluteX="60dp"
+                        app:layout_editor_absoluteY="44dp"
+                        tools:layout_editor_absoluteX="96dp"
+                        tools:layout_editor_absoluteY="44dp" />
+
+                    <ImageView
+                        android:layout_width="190dp"
+                        android:layout_height="0dp"
+                        android:src="@drawable/line"
+                        tools:layout_editor_absoluteX="72dp"
+                        tools:layout_editor_absoluteY="73dp" />
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="20dp"
+                        android:text="Name"
+                        android:textColor="@color/textadd"
+                        android:textSize="12dp"
+                        tools:layout_editor_absoluteX="72dp"
+                        tools:layout_editor_absoluteY="86dp" />
+
+
+                    <TextView
+                        android:layout_width="85dp"
+                        android:layout_height="20dp"
+                        android:text="Curtis Stone"
+                        android:textColor="@color/black"
+                        android:textSize="12dp"
+                        android:textStyle="bold"
+                        tools:layout_editor_absoluteX="72dp"
+                        tools:layout_editor_absoluteY="106dp" />
+
+                    <TextView
+                        android:layout_width="110dp"
+                        android:layout_height="20dp"
+                        android:text="Booking Date"
+                        android:textColor="@color/textadd"
+                        android:textSize="12dp"
+                        tools:layout_editor_absoluteX="171dp"
+                        tools:layout_editor_absoluteY="86dp" />
+
+                    <TextView
+                        android:layout_width="126dp"
+                        android:layout_height="20dp"
+                        android:text=" 21 Apr, 2022 04:15pm"
+                        android:textColor="@color/black"
+                        android:textSize="12dp"
+                        android:textStyle="bold"
+                        tools:layout_editor_absoluteX="170dp"
+                        tools:layout_editor_absoluteY="106dp" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/materialCardView3"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginStart="20dp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="10dp"
+                tools:layout_editor_absoluteY="780dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/avatar"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:shapeAppearanceOverlay="@style/Circular"
+                        tools:layout_editor_absoluteY="0dp" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <TextView
+                android:id="@+id/txtrecent"
+                android:layout_width="102dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Recent Review "
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/materialCardView4"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="45dp" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtrecent"
+                tools:ignore="MissingConstraints,NotSibling"
+                tools:listitem="@layout/recent_layout" />
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/materialCardView9"
+                android:layout_width="158dp"
+                android:layout_height="95dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="15dp"
+                app:layout_constraintEnd_toStartOf="@+id/materialCardView8"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/recycler1">
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="65dp"
+                        android:layout_height="43dp"
+                        android:layout_marginTop="16dp"
+                        android:text="124"
+                        android:textColor="@color/cardview3"
+                        android:textSize="30dp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toStartOf="@+id/imageView5"
+                        app:layout_constraintHorizontal_bias="0.39"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_editor_absoluteX="20dp"
+                        app:layout_editor_absoluteY="20dp" />
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="31dp"
+                        android:layout_height="31dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="16dp"
+                        android:src="@drawable/grp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:layout_width="69dp"
+                        android:layout_height="23dp"
+                        android:text="Total Clients"
+                        android:textSize="12dp"
+                        app:layout_constraintEnd_toEndOf="@+id/textView9"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="@+id/textView9"
+                        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/materialCardView8"
+                android:layout_width="158dp"
+                android:layout_height="95dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="32dp"
+                app:cardCornerRadius="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/materialCardView9"
+                app:layout_constraintTop_toBottomOf="@+id/recycler1"
+                app:layout_editor_absoluteX="150dp"
+                app:layout_editor_absoluteY="1098dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        android:layout_width="65dp"
+                        android:layout_height="43dp"
+                        android:layout_marginTop="16dp"
+                        android:text="18"
+                        android:textColor="@color/cardview3"
+                        android:textSize="30dp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toStartOf="@+id/imageView6"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_editor_absoluteX="20dp"
+                        app:layout_editor_absoluteY="20dp" />
+
+                    <ImageView
+                        android:id="@+id/imageView6"
+                        android:layout_width="31dp"
+                        android:layout_height="31dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="16dp"
+                        android:src="@drawable/grp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <TextView
+                        android:layout_width="69dp"
+                        android:layout_height="23dp"
+                        android:text="New Clients"
+                        android:textSize="12dp"
+                        app:layout_constraintEnd_toEndOf="@+id/textView10"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="@+id/textView10"
+                        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="340dp"
+                android:layout_height="179dp"
+                android:layout_marginTop="50dp"
+                app:cardCornerRadius="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/materialCardView8">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="42dp"
+                        android:layout_height="30dp"
+                        android:text="124"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.053"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.228"
+                        app:layout_editor_absoluteX="54dp"
+                        app:layout_editor_absoluteY="20dp" />
+
+                    <TextView
+                        android:layout_width="83dp"
+                        android:layout_height="20dp"
+                        android:text="Total Bookings"
+                        android:textColor="@color/textadd"
+                        android:textSize="12dp"
+                        app:layout_constraintStart_toStartOf="@+id/textView12"
+                        tools:layout_editor_absoluteY="87dp"
+                        tools:ignore="MissingConstraints" />
+
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="17dp"
+                        android:background="@drawable/spinner"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</layout>

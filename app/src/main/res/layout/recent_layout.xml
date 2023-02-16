@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="300dp"
+        android:layout_height="153dp"
+        app:cardCornerRadius="6dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="108dp"
+                android:layout_height="25dp"
+                android:layout_marginEnd="32dp"
+                android:fontFamily="@font/noto_sans"
+                android:text="Curtis Stone"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                app:layout_constraintBottom_toTopOf="@+id/textView8"
+                app:layout_constraintEnd_toStartOf="@+id/imageView3"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.7" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="12dp"
+                android:layout_height="14dp"
+                android:src="@drawable/star"
+                app:layout_constraintBottom_toBottomOf="@+id/textView7"
+                app:layout_constraintTop_toTopOf="@+id/textView7"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="253dp" />
+
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="17dp"
+                android:layout_height="18dp"
+                android:layout_marginEnd="8dp"
+                android:text="4.5"
+                android:textSize="12dp"
+                app:layout_constraintBottom_toTopOf="@+id/textView8"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="176dp"
+                android:layout_height="15dp"
+                android:layout_marginBottom="28dp"
+                android:fontFamily="@font/noto_sans"
+                android:text="Ladies - Wash, Hair cut  Styling"
+                android:textColor="@color/textadd"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/imageView4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.031"
+                app:layout_constraintStart_toStartOf="@+id/textView6" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="230dp"
+                android:layout_height="0dp"
+                android:src="@drawable/line"
+                app:layout_constraintEnd_toEndOf="@+id/textView8"
+                app:layout_constraintStart_toStartOf="@+id/textView8"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteY="98dp" />
+
+            <TextView
+                android:layout_width="236dp"
+                android:layout_height="45dp"
+                android:fontFamily="@font/noto_sans"
+                android:lineHeight="15dp"
+                android:text="Lorem Ipsum is simply dummy text of the printing
+                               and typesetting industry. Lorem Ipsum has been
+                         the industry's standard dummy."
+                android:textSize="10dp"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="@+id/imageView4"
+                app:layout_constraintStart_toStartOf="@+id/imageView4"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteY="107dp" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="20dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="20dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/avatar"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shapeAppearanceOverlay="@style/Circular" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

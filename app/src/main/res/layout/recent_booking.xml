@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="330dp"
+        android:layout_height="164dp"
+        app:cardCornerRadius="15dp"
+        app:layout_editor_absoluteX="65dp"
+        app:layout_editor_absoluteY="20dp"
+        tools:ignore="MissingConstraints">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textviewr1"
+                android:layout_width="168dp"
+                android:layout_height="19dp"
+                android:fontFamily="@font/noto_sans"
+                android:lineHeight="25dp"
+                android:text="Wash, Hair cut &amp; Styling"
+                android:textColor="@color/textcolor1"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="20dp" />
+
+            <ImageView
+                android:id="@+id/imageViewr1"
+                android:layout_width="23dp"
+                android:layout_height="14dp"
+                android:src="@drawable/location"
+                tools:layout_editor_absoluteX="81dp"
+                tools:layout_editor_absoluteY="47dp" />
+
+            <TextView
+                android:id="@+id/textViewr2"
+                android:layout_width="75dp"
+                android:layout_height="16dp"
+                android:text="8002 Zurich"
+                android:textColor="@color/textadd"
+                android:textSize="14dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.059"
+                app:layout_constraintStart_toEndOf="@+id/imageViewr1"
+                app:layout_editor_absoluteX="60dp"
+                app:layout_editor_absoluteY="44dp"
+                tools:layout_editor_absoluteY="45dp" />
+
+            <ImageView
+                android:id="@+id/imageViewr2"
+                android:layout_width="190dp"
+                android:layout_height="0dp"
+                android:src="@drawable/line"
+                app:layout_constraintEnd_toEndOf="@+id/textViewr2"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/imageViewr1"
+                tools:layout_editor_absoluteY="68dp" />
+
+            <TextView
+                android:id="@+id/textViewr3"
+                android:layout_width="80dp"
+                android:layout_height="20dp"
+                android:text="Name"
+                android:textColor="@color/textadd"
+                android:textSize="12dp"
+                app:layout_constraintStart_toStartOf="@+id/imageViewr2"
+                tools:layout_editor_absoluteY="86dp" />
+
+
+            <TextView
+                android:id="@+id/textViewr4"
+                android:layout_width="82dp"
+                android:layout_height="20dp"
+                android:text="Curtis Stone"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/textViewr3"
+                tools:layout_editor_absoluteY="106dp" />
+
+            <TextView
+                android:id="@+id/textViewr5"
+                android:layout_width="110dp"
+                android:layout_height="20dp"
+                android:text="Booking Date"
+                android:textColor="@color/textadd"
+                android:textSize="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textViewr3"
+                tools:layout_editor_absoluteY="86dp" />
+
+            <TextView
+                android:id="@+id/textViewr6"
+                android:layout_width="126dp"
+                android:layout_height="20dp"
+                android:text=" 21 Apr, 2022 04:15pm"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/textViewr5"
+                tools:layout_editor_absoluteY="106dp" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="55dp"
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imagegirl"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/avatar"
+                app:layout_constraintStart_toStartOf="parent"
+                app:shapeAppearanceOverlay="@style/Circular"
+                tools:layout_editor_absoluteY="0dp" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="77dp"
+        android:layout_height="28dp"
+        app:cardCornerRadius="15dp"
+        tools:ignore="MissingConstraints"
+        app:cardBackgroundColor="@color/btn1"
+        tools:layout_editor_absoluteX="219dp"
+        tools:layout_editor_absoluteY="151dp" >
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+          >
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="0dp"
+                android:text="Reject"
+                android:textColor="@color/txtbtn"
+                android:textStyle="bold"
+                android:textSize="12dp"
+                app:layout_editor_absoluteX="18dp"
+                app:layout_editor_absoluteY="5dp"
+                />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>
+    
+    
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="77dp"
+        android:layout_height="28dp"
+        app:cardCornerRadius="15dp"
+        tools:ignore="MissingConstraints"
+        app:cardBackgroundColor="@color/txtbtn2"
+        tools:layout_editor_absoluteX="300dp"
+        tools:layout_editor_absoluteY="151dp">
+        
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="0dp"
+                android:text="Accept"
+                android:textColor="@color/txtbtna"
+                android:textStyle="bold"
+                android:textSize="12dp"
+                app:layout_editor_absoluteX="18dp"
+                app:layout_editor_absoluteY="5dp"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
